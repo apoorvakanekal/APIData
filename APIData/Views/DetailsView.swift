@@ -60,9 +60,7 @@ struct DetailsView: View{
                 }
                 .controlSize(.small)
                 .frame(width:300, height:200)
-                .mapControls{
-                    MapScaleView()
-                }
+                .mapStyle(.imagery(elevation: .realistic))
             }
             .toolbar{
                 ToolbarItem(placement: .principal){
