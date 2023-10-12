@@ -12,12 +12,22 @@ struct DetailsView: View{
     @Environment(\.dismiss) var dismiss
     let country: Country
     
+    var pushNotificationService = PushNotificationService()
     
     var body: some View{
         NavigationView{
             VStack{
                 Button("Press to dismiss"){
                     dismiss()
+                }
+                
+                Button("Ask for push notification permissions"){
+                    pushNotificationService.requestPermissions()
+                }
+                .padding(.vertical, 16)
+                
+                Button("Remind me about this country"){
+                    pushNotificationService.scheduleNotification(title: country.name.common, subtitle: "Don't forget about \(country.name.common)!")
                 }
                 
                 Text("Coat of Arms:")

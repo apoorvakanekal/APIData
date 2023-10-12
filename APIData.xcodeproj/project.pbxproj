@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1762B40E2AD7C259008CA300 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762B40D2AD7C259008CA300 /* PushNotificationService.swift */; };
 		17C43B522ACFBDD20087A934 /* APIDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C43B512ACFBDD20087A934 /* APIDataApp.swift */; };
 		17C43B542ACFBDD20087A934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C43B532ACFBDD20087A934 /* ContentView.swift */; };
 		17C43B562ACFBDD40087A934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C43B552ACFBDD40087A934 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1762B40D2AD7C259008CA300 /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
 		17C43B4E2ACFBDD20087A934 /* APIData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C43B512ACFBDD20087A934 /* APIDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataApp.swift; sourceTree = "<group>"; };
 		17C43B532ACFBDD20087A934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1762B40C2AD7C211008CA300 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1762B40D2AD7C259008CA300 /* PushNotificationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		17C43B452ACFBDD20087A934 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 				17C43B7E2ACFBDF70087A934 /* Views */,
 				17C43B7D2ACFBDE80087A934 /* ViewModel */,
 				17C43B7C2ACFBDE00087A934 /* Model */,
+				1762B40C2AD7C211008CA300 /* Service */,
 				17C43B552ACFBDD40087A934 /* Assets.xcassets */,
 				17C43B572ACFBDD40087A934 /* APIData.entitlements */,
 				17C43B582ACFBDD40087A934 /* Preview Content */,
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1762B40E2AD7C259008CA300 /* PushNotificationService.swift in Sources */,
 				17C43B822ACFBE840087A934 /* ContentViewModel.swift in Sources */,
 				17C43B542ACFBDD20087A934 /* ContentView.swift in Sources */,
 				17C43B522ACFBDD20087A934 /* APIDataApp.swift in Sources */,

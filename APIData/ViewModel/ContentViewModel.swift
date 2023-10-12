@@ -10,6 +10,7 @@ class ContentViewModel: ObservableObject {
     
     @Published var cities = [Country]()
     
+    @MainActor
     func getAllCities() async -> () {
         do{
             let url = URL(string: "https://restcountries.com/v3.1/all")!
