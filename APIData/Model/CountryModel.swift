@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
 struct Country: Codable, Identifiable {
     var id: Int { return UUID().hashValue}
@@ -16,6 +17,7 @@ struct Country: Codable, Identifiable {
     var flag: String
     var flags: Flag
     var coatOfArms: CoatOfArms?
+    var capitalInfo: CapitalInfo
 }
 
 struct Name: Codable{
@@ -28,4 +30,13 @@ struct Flag: Codable{
 
 struct CoatOfArms: Codable{
     var png: String?
+}
+
+struct CapitalInfo: Codable {
+    var latlng: [Double]?
+    
+    var coordinate: CLLocationCoordinate2D? {
+        guard let latlng, latlng.count >= 2 else { return nil }
+        return CLLocationCoordinate2D(latitude: latlng[0], longitude: latlng[1])
+    }
 }

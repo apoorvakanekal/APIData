@@ -7,6 +7,7 @@
 import Foundation
 
 class ContentViewModel: ObservableObject {
+    
     @Published var cities = [Country]()
     
     func getAllCities() async -> () {
@@ -18,7 +19,6 @@ class ContentViewModel: ObservableObject {
         } catch{
             print("Error: \(error.localizedDescription)")
         }
-        
     }
 }
 
